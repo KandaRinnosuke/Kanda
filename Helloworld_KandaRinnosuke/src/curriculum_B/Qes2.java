@@ -4,10 +4,11 @@ public class Qes2 {
 
 	public static void main(String[] args) {
 		//2-1
-		  int intSco=0;//初期値を0に設定
-		 intSco=75;if(intSco>=60);//代数に75を代入し、条件を明示する
+		int intSco=0;//初期値を0に設定
+		    intSco=75;
+		 if(intSco>=60) ;{//代数に75を代入し、条件を明示する
 		System.out.println("合格です");	//結果を出力
-		
+		}
 		System.out.println();//改行
 		
 		//2-2
@@ -26,7 +27,7 @@ public class Qes2 {
         int Ageint=0;//初期値を0に設定
         Ageint=18;if(Ageint>20) {//代数に18を代入し、条件を明示する
         System.out.println("成人です");//条件を満たした場合の結果を出力
-        }else {
+           }else {
         	if(Ageint>=13&&Ageint<=19) {//新たな条件を明示する
         System.out.println("ティーンエージャーです");//条件を満たした結果を出力
            }else {
@@ -50,8 +51,9 @@ public class Qes2 {
         if(intX>=intY&&intX>=intZ) {
         max=intX;
         }else if(intY>=intX&&intY>=intZ) {
+        max=intY;
         }else {
-        	max=intZ;
+        max=intZ;
         	/*各代数を比較し、判定を行う*/
         	System.out.println("最大値は："+max);//結果を出力
         }
@@ -95,7 +97,7 @@ public class Qes2 {
         	
         	//2-8
         	String Strtext=("test");//textと出力
-        	if(Strtext.equals("null")||Strtext.equals("")){//条件を提示
+        	if(Strtext==null||Strtext.equals("")){//条件を提示
         		System.out.println("入力が無効です");//結果を出力
         	}else {//それ以外の条件を提示
         		System.out.println(Strtext);//結果を出力
@@ -128,7 +130,7 @@ public class Qes2 {
         			System.out.println("日曜日");
         			break;
         		}/*場合とそれに応じて結果を出力*/		
-        		System.out.println();{//改行
+        		System.out.println();//改行
         		
         		//2-10
         		int intMonth=0;//初期値を0に設定
@@ -161,5 +163,5 @@ public class Qes2 {
 		}
 
 	}
-}
+
 
